@@ -82,7 +82,8 @@ p a{
     display: flex;
   }
   div.main{
-    padding-top: 100px
+    padding-top: 100px;
+    padding-right: 10px;
   }
 }
 
