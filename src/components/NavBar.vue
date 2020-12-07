@@ -3,19 +3,19 @@
       <div>
         <h3 class="logo">Obiwan Pelosi</h3>
         <button v-show="!shownav" @click="toggle" class="toggler"><span  class="iconify bar" data-icon="clarity:bars-line" data-inline="false"></span></button>
-        <button v-if="shownav" @click="toggle"><span class="iconify cancel" data-icon="topcoat:cancel" data-inline="false"></span></button>
+        <button v-if="shownav" @click="toggle" class="cross"><span class="iconify cancel" data-icon="topcoat:cancel" data-inline="false"></span></button>
         <ul class="show-desktop">
-          <li><a href="/">Home</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/contact">Contact Me</a></li>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="#">Resume</router-link></li>
+          <li><router-link to="/projects">Projects</router-link></li>
+          <li><router-link to="/contact">Contact Me</router-link></li>
         </ul>
       </div>
       <ul v-if="shownav" class="show-mobile">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact Me</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="#">Resume</router-link></li>
+        <li><router-link to="/projects">Projects</router-link></li>
+        <li><router-link to="/contact">Contact Me</router-link></li>
       </ul>
       
     </nav>
@@ -114,6 +114,9 @@ nav div{
   .show-desktop li{
     margin: 0 15px 0 0;
   }
+  .show-desktop li a{
+    margin-right: 20px;
+  }
   .show-desktop a{
     color: #fff;
     text-decoration: none;
@@ -126,6 +129,12 @@ nav div{
    
   .toggler{
     display: none;
+  }
+  .show-mobile{
+    display: none;
+  }
+  .cross{
+    display: none
   }
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="main">
       <h1>Like the Nigerian government loves to disgrace its citizens,  I love to build beautiful and functional websites</h1>
       <hr>
-      <p>I currently use frameworks like Vue, Laravel and jQuery. Check out some of my <a href="/projects">projects</a></p>
+      <p>I currently use frameworks like Vue, Laravel and jQuery. Check out some of my <router-link to="/projects">projects</router-link></p>
       <div class="icons">
         <a target="blank" href="https://mobile.twitter.com/Bioye7"><span class="iconify contact" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a>
         <a target="blank" href="https://github.com/RogueCode007"><span class="iconify contact" data-icon="ant-design:github-filled" data-inline="false"></span></a>
