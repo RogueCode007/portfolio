@@ -12,10 +12,10 @@
         </ul>
       </div>
       <ul v-if="shownav" class="show-mobile">
-        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/" @click="toggle">Home</router-link></li>
         <li><router-link to="#">Resume</router-link></li>
-        <li><router-link to="/projects">Projects</router-link></li>
-        <li><router-link to="/contact">Contact Me</router-link></li>
+        <li><router-link to="/projects" @click="toggle">Projects</router-link></li>
+        <li><router-link to="/contact" @click="toggle">Contact Me</router-link></li>
       </ul>
       
     </nav>
