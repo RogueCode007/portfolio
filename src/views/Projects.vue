@@ -33,7 +33,7 @@
           <span class="api">API</span>
         </div>
         <p class="description">A weather app that uses geolocation and consumes the open weather API to display weather information of a user's location or of a searched city</p>
-        <a target="blank" href="htps://roguecode.github.io/weatherapp"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://roguecode007.github.io/weatherapp"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
       </div>
     </div>
   </div>
