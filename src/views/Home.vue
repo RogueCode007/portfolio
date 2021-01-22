@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="main">
-      <h1>Like the Nigerian government loves to disgrace its citizens,  I love to build beautiful and functional websites</h1>
+      <h1>I'm Obiwan-pelosi and I love to build beautiful and functional websites</h1>
       <hr>
       <p>I currently use frameworks like Vue, Laravel and jQuery. Check out some of my <router-link to="/projects">projects</router-link></p>
       <div class="icons">
@@ -11,17 +11,23 @@
       </div>
     </div>
     <div class="image">
-      <img src="https://picsum.photos/300/450">
+      <img 
+      :src="starwars">
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import starwars from "@/assets/star-wars.jpg"
 
 export default {
   name: 'Home',
+  data(){
+    return {
+      starwars: starwars
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -71,6 +77,13 @@ p a{
   font-size: 1.6em;
   margin-right: 15px;
 }
+div.image{
+  margin-top: 20px;
+}
+.image img{
+  width: 300px;
+  
+}
 @media only screen and (min-width: 500px){
   h1{
     font-size: 1.8em;
@@ -84,6 +97,12 @@ p a{
   div.main{
     padding-top: 100px;
     padding-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .image img{
+    width: 400px
   }
 }
 
