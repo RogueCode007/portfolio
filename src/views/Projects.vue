@@ -12,7 +12,7 @@
           <span class="css">CSS</span>
           <span class="s3">Amazon S3</span>
         </div>
-        <p class="description">An e-commerce web application for a business owner and consumers. A business owner with admin access can log in and add products (with pictures) to the store while consumers can shop for items. Note: Registration on this site has been revoked because of attacks, feel free to contact me for admin privileges.</p>
+        <p class="description">An e-commerce web application for a business owner and consumers. A business owner with admin access can log in and add products (with pictures) to the store while consumers can shop for items.</p>
         <a target="blank" href="http://shevil.herokuapp.com"><span class="iconify" data-icon="octicon:link-24" data-inline="false"></span></a>
       </div>
       <div class="tile">
