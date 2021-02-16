@@ -35,6 +35,18 @@
         <p class="description">A weather app that uses geolocation and consumes the open weather API to display weather information of a user's location or of a searched city</p>
         <a target="blank" href="https://roguecode007.github.io/weatherapp"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
       </div>
+      <div class="tile">
+        <h3 class="title">Job Search App</h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">Tailwind</span>
+          <span class="nuxt">Nuxt</span>
+          <span class="api">API</span>
+        </div>
+        <p class="description">A job search app for Github Jobs listings in various cities</p>
+        <a target="blank" href="http://hubjobs.herokuapp.com"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
+      </div>
     </div>
   </div>
 </template>
@@ -85,7 +97,7 @@ span{
   color: #797979;
   font-size: 0.95em;
 }
-.vue{
+.vue, .nuxt{
   background-color: #41b883;
 }
 .laravel{
