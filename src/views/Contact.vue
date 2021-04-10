@@ -8,9 +8,27 @@
       <a target="blank" href="https://github.com/RogueCode007"><span class="iconify contact" data-icon="ant-design:github-filled" data-inline="false"></span></a>
       <a target="blank" href="http://linkedin.com/in/feyifoluwa-abioye-1296351bb"><span class="iconify contact" data-icon="bx:bxl-linkedin" data-inline="false"></span></a>
     </div>
+    <div class="image mt-6">
+      <img :src="yoda" alt="baby yoda image">
+    </div>
   </div>
 </template>
+<script>
+import yoda from "@/assets/babyyoda.jpg"
+import white from "@/assets/white.jpg"
+
+export default {
+  data(){
+    return {
+      yoda: yoda,
+      white: white
+    }
+  }
+  
+}
+</script>
 <style lang="scss" scoped>
+
 div.contacts{
   margin: 60px auto;
   animation-name: fade;

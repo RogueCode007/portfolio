@@ -1,9 +1,55 @@
 <template>
   <div class="projects">
     
-    <div class="project-tiles">
-      <p>These are some projects i've worked on</p>
+    <p class="text-red-500 md:ml-6">These are some projects i've worked on</p>
+    <div class="project-tiles mt-6 lg:mx-auto">
+
       <div class="tile">
+        <div class="image-div  bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + leasy + ')'}"></div>
+        <h3 class="title">windbnb</h3>
+        <div class="stack">
+          <span class="s3">Amazon S3</span>
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">Tailwind</span>
+          <span class="laravel">Laravel</span>
+          <span class="api">API</span>
+          <span class="mysql">Mysql</span>
+        </div>
+        <p class="description text-white">A fullstack airbnb clone built with laravel and VueJs, hosting property images on Amazon s3</p>
+        <a target="blank" href="http://leasyng.herokuapp.com" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/windbnb" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
+      </div>
+
+      <div class="tile mt-12">
+        <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + geoquiz + ')'}"></div>
+        <h3 class="title">Country Quiz</h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">API</span>
+        </div>
+        <p class="description">A fun quiz about countries, consumes an API to display questions about random countries</p>
+        <a target="blank" href="https://roguecode007.github.io/geoquiz" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/geoquiz" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
+      </div>
+
+      <div class="tile mt-12">
+        <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + weatherapp + ')'}"></div>
+        <h3 class="title">Weather App</h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">API</span>
+        </div>
+        <p class="description">A weather app that fetches weather information of a user's location or of that of a searched city</p>
+        <a target="blank" href="https://roguecode007.github.io/weatherapp" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/weatherappcode" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
+      </div>
+
+      
+      <div class="tile mt-12">
+        <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + shevil + ')'}"></div>
         <h3 class="title">E-commerce App</h3>
         <div class="stack">
           <span class="laravel">Laravel</span>
@@ -12,47 +58,30 @@
           <span class="css">CSS</span>
           <span class="s3">Amazon S3</span>
         </div>
-        <p class="description">An e-commerce web application for a business owner and consumers. A business owner with admin access can log in and add products (with pictures) to the store while consumers can shop for items.</p>
-        <a target="blank" href="http://shevil.herokuapp.com"><span class="iconify" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <p class="description">A full stack, fashion store-like web application with photo adding features by an admin.</p>
+        <a target="blank" href="http://shevil.herokuapp.com" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/pop" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
       </div>
-      <div class="tile">
-        <h3 class="title">Country Quiz</h3>
-        <div class="stack">
-          <span class="vue">Vue</span>
-          <span class="css">CSS</span>
-          <span class="api">API</span>
-        </div>
-        <p class="description">A fun quiz about countries, consumes an API to display questions about random countries while keeping count of scores</p>
-        <a target="blank" href="https://roguecode007.github.io/geoquiz"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
-      </div>
-      <div class="tile">
-        <h3 class="title">Weather App</h3>
-        <div class="stack">
-          <span class="vue">Vue</span>
-          <span class="css">CSS</span>
-          <span class="api">API</span>
-        </div>
-        <p class="description">A weather app that uses geolocation and consumes the open weather API to display weather information of a user's location or of a searched city</p>
-        <a target="blank" href="https://roguecode007.github.io/weatherapp"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
-      </div>
-      <div class="tile">
-        <h3 class="title">Job Search App</h3>
-        <div class="stack">
-          <span class="vue">Vue</span>
-          <span class="css">CSS</span>
-          <span class="api">Tailwind</span>
-          <span class="nuxt">Nuxt</span>
-          <span class="api">API</span>
-        </div>
-        <p class="description">A job search app for Github Jobs listings in various cities</p>
-        <a target="blank" href="http://hubjobs.herokuapp.com"><span class="iconify link" data-icon="octicon:link-24" data-inline="false"></span></a>
-      </div>
+
     </div>
   </div>
 </template>
 <script>
+import shevil from "@/assets/shevilsnapshot.png"
+import geoquiz from "@/assets/geoquizsnapshot.png"
+import leasy from "@/assets/leasysnapshot.png"
+import weatherapp from "@/assets/weatherappsnapshot.png"
+
 export default {
-  
+  data(){
+    return {
+      shevil : shevil,
+      geoquiz : geoquiz,
+      leasy : leasy,
+      weatherapp : weatherapp
+    }
+  },
+
 }
 </script>
 <style lang="scss" scoped>
@@ -72,15 +101,10 @@ div.projects{
     opacity: 1;
   }
 }
-div.project-tiles{
-  max-width: 670px;
-  margin: 20px auto
-}
-div.tile{
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #ffffff;
-  border-radius: 5px;
+.image-div{
+  height: 250px;
+  border-radius: 24px;
+  border: 1px solid  rgb(107, 114, 128);
 }
 h3{
   color: #000000;
@@ -94,7 +118,6 @@ span{
 }
 .description{
   margin: 5px 0;
-  color: #797979;
   font-size: 0.95em;
 }
 .vue, .nuxt{
@@ -118,8 +141,18 @@ span{
 .s3{
   background-color: #ff9900;
 }
-.link{
-  color: #797979
-}
 
+@media only screen and (min-width: 768px){
+  div.tile{
+    width: 45%;
+    margin: 2.5%;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1024px){
+  div.tile{
+    width: 30%;
+    margin: 1.667%;
+  }
+}
 </style>
