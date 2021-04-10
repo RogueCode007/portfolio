@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     
-    <p class="text-red-500 md:ml-6">These are some projects i've worked on</p>
+    <p class="text-red-500 text-lg md:ml-6">Explore some of my works</p>
     <div class="project-tiles mt-6 lg:mx-auto">
 
       <div class="tile">
