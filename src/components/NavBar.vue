@@ -1,7 +1,7 @@
 <template>
     <nav>
       <div>
-        <h3 class="logo">Obiwan Pelosi</h3>
+        <div class="logo cursor-pointer"><img :src="yoda" alt="baby yoda image" class="yoda"></div>
         <button v-show="!shownav" @click="toggle" class="toggler"><span  class="iconify bar" data-icon="clarity:bars-line" data-inline="false"></span></button>
         <button v-if="shownav" @click="toggle" class="cross"><span class="iconify cancel" data-icon="topcoat:cancel" data-inline="false"></span></button>
         <ul class="show-desktop">
@@ -22,10 +22,16 @@
 </template>
 
 <script>
+import yoda from "@/assets/babyyoda.jpg"
 export default {
   name: 'NavBar',
   props:{
     shownav: Boolean
+  },
+  data(){
+    return {
+      yoda: yoda,
+    }
   },
   methods:{
     toggle(){
@@ -49,6 +55,17 @@ nav div{
   align-items: center;
   padding: 10px 0;
 }
+.logo{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%
+}
+.yoda{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit
+}
+
 .show-desktop{
   display: none;
 }

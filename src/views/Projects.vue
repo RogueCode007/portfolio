@@ -63,6 +63,19 @@
         <a target="blank" href="https://github.com/RogueCode007/pop" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
       </div>
 
+      <div class="tile mt-12">
+        <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + pd + ')'}"></div>
+        <h3 class="title">PaddyCover user dashboard</h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="bootstrap">Bootstrap</span>
+          <span class="css">CSS</span>
+        </div>
+        <p class="description">A user dashbaord for an insure-tech company built using Bootstarp's Core UI</p>
+        <a target="blank" href="https://infallible-euler-1f2063.netlify.app" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/paddycover-user" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
+      </div>
+
     </div>
   </div>
 </template>
@@ -71,6 +84,7 @@ import shevil from "@/assets/shevilsnapshot.png"
 import geoquiz from "@/assets/geoquizsnapshot.png"
 import leasy from "@/assets/leasysnapshot.png"
 import weatherapp from "@/assets/weatherappsnapshot.png"
+import pd from "@/assets/pd.png"
 
 export default {
   data(){
@@ -78,7 +92,8 @@ export default {
       shevil : shevil,
       geoquiz : geoquiz,
       leasy : leasy,
-      weatherapp : weatherapp
+      weatherapp : weatherapp,
+      pd: pd
     }
   },
 
