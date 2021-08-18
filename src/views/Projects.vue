@@ -13,8 +13,8 @@
           <span class="api">Tailwind</span>
         </div>
         <p class="description text-white">A website project for etranzact built primarily with VueJs, eventually connected to a Laravel backend</p>
-        <a target="blank" href="http://leasyng.herokuapp.com" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
-        <a target="blank" href="https://github.com/RogueCode007/windbnb" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
+        <a target="blank" href="https://etranzactweb.herokuapp.com" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/etranzact" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
       </div>
       <div class="tile mt-12">
         <div class="image-div  bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + leasy + ')'}"></div>
