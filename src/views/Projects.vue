@@ -5,6 +5,18 @@
     <div class="project-tiles mt-6 lg:mx-auto">
 
       <div class="tile">
+        <div class="image-div  bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + etranz + ')'}"></div>
+        <h3 class="title">etranzact web</h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">Tailwind</span>
+        </div>
+        <p class="description text-white">A website project for etranzact built primarily with VueJs, eventually connected to a Laravel backend</p>
+        <a target="blank" href="http://leasyng.herokuapp.com" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://github.com/RogueCode007/windbnb" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
+      </div>
+      <div class="tile mt-12">
         <div class="image-div  bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + leasy + ')'}"></div>
         <h3 class="title">windbnb</h3>
         <div class="stack">
@@ -85,10 +97,12 @@ import geoquiz from "@/assets/geoquizsnapshot.png"
 import leasy from "@/assets/leasysnapshot.png"
 import weatherapp from "@/assets/weatherappsnapshot.png"
 import pd from "@/assets/pd.png"
+import etranz from "@/assets/etranz.png"
 
 export default {
   data(){
     return {
+      etranz: etranz,
       shevil : shevil,
       geoquiz : geoquiz,
       leasy : leasy,
