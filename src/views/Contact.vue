@@ -3,6 +3,7 @@
     <h1>Let's talk</h1>
     <hr>
     <p>If you have a project in mind or are simply interested in my awesome self, get in touch and let's get things moving</p>
+    <p class="mt-4 font-bold">May the force be with you!</p>
     <div class="icons">
       <a target="blank" href="https://mobile.twitter.com/Bioye7"><span class="iconify contact" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a>
       <a target="blank" href="https://github.com/RogueCode007"><span class="iconify contact" data-icon="ant-design:github-filled" data-inline="false"></span></a>
