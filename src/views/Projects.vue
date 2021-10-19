@@ -13,9 +13,24 @@
           <span class="api">Tailwind</span>
         </div>
         <p class="description text-white">A website project for etranzact built primarily with VueJs, eventually connected to a Laravel backend</p>
-        <a target="blank" href="https://etranzactweb.herokuapp.com" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <a target="blank" href="https://www.etranzact.com/#/" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
         <a target="blank" href="https://github.com/RogueCode007/etranzact" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
       </div>
+
+      <div class="tile mt-12">
+        <div class="image-div  bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + pd + ')'}"></div>
+        <h3 class="title">paddycover</h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">Tailwind</span>
+          <span class="api">API</span>
+        </div>
+        <p class="description text-white">A fullstack web application for purchasing various types of insurance with the added benefit of paying small small</p>
+        <a target="blank" href="https://paddymain.netlify.app" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <!-- <p class="text-2xl inline ml-5 text-opacity-50"><span class="iconify text-white inline opacity-30" data-icon="line-md:github" data-inline="false"></span></p> -->
+      </div>
+
       <div class="tile mt-12">
         <div class="image-div  bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + leasy + ')'}"></div>
         <h3 class="title">windbnb</h3>
@@ -33,6 +48,18 @@
         <a target="blank" href="https://github.com/RogueCode007/windbnb" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
       </div>
 
+      <div class="tile mt-12">
+        <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + xp + ')'}"></div>
+        <h3 class="title">xpatag </h3>
+        <div class="stack">
+          <span class="vue">Vue</span>
+          <span class="css">CSS</span>
+          <span class="api">API</span>
+        </div>
+        <p class="description">An agri-tech platform that connects farm and business owners to various experts in the field</p>
+        <a target="blank" href="https://xpataghome.herokuapp.com/" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
+        <!-- <a target="blank" href="https://github.com/RogueCode007/geoquiz" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a> -->
+      </div>
       <div class="tile mt-12">
         <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + geoquiz + ')'}"></div>
         <h3 class="title">Country Quiz</h3>
@@ -75,7 +102,7 @@
         <a target="blank" href="https://github.com/RogueCode007/pop" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
       </div>
 
-      <div class="tile mt-12">
+      <!-- <div class="tile mt-12">
         <div class="image-div bg-cover bg-no-repeat" v-bind:style="{ backgroundImage: 'url(' + pd + ')'}"></div>
         <h3 class="title">PaddyCover user dashboard</h3>
         <div class="stack">
@@ -86,7 +113,7 @@
         <p class="description">A user dashbaord for an insure-tech company built using Bootstarp's Core UI</p>
         <a target="blank" href="https://infallible-euler-1f2063.netlify.app" class="text-2xl inline"><span class="iconify text-white inline" data-icon="octicon:link-24" data-inline="false"></span></a>
         <a target="blank" href="https://github.com/RogueCode007/paddycover-user" class="text-2xl inline ml-5"><span class="iconify text-white inline" data-icon="line-md:github" data-inline="false"></span></a>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -97,6 +124,7 @@ import geoquiz from "@/assets/geoquizsnapshot.png"
 import leasy from "@/assets/leasysnapshot.png"
 import weatherapp from "@/assets/weatherappsnapshot.png"
 import pd from "@/assets/pd.png"
+import xp from "@/assets/xp.png"
 import etranz from "@/assets/etranz.png"
 
 export default {
@@ -107,7 +135,8 @@ export default {
       geoquiz : geoquiz,
       leasy : leasy,
       weatherapp : weatherapp,
-      pd: pd
+      pd: pd,
+      xp: xp
     }
   },
 
@@ -148,6 +177,9 @@ span{
 .description{
   margin: 5px 0;
   font-size: 0.95em;
+}
+.title{
+  color: #fff;
 }
 .vue, .nuxt{
   background-color: #41b883;
